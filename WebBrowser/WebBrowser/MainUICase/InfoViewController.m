@@ -21,6 +21,8 @@
 // インターフェースの実装
 @implementation InfoViewController
 
+S2_DEALLOC_LOGGING_IMPLEMENT
+
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad;

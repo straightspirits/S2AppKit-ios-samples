@@ -13,7 +13,7 @@
 // プライベートインターフェースの定義
 @interface MainUICaseRootViewController ()
 
-@property (weak) S2NavigationController* mainViewController;
+@property (strong) S2NavigationController* mainViewController;
 @property (weak) WebBrowseViewController* webBrowseViewController;
 
 @end

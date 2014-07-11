@@ -21,7 +21,9 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - MBProgressHUD (0.8)
-  - S2AppKit (2.0.2):
+  - S2AppKit (2.0.3):
+    - S2AppKit/Core
+  - S2AppKit/Core (2.0.3):
     - MBProgressHUD (~> 0.8)
 
 DEPENDENCIES:
@@ -36,6 +38,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
-  S2AppKit: c0a38cbcac54b9cf51d46dc03f78b871ec2d5eb9
+  S2AppKit: a04fe6849440c788c9bc4b096963588b258a562a
 
 COCOAPODS: 0.33.1

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A832B080-D46E-4C04-998C-5A5D6AF82F42</string>
+	<key>IDESourceControlProjectName</key>
+	<string>S2AppKitSamples</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3E7912E0-9618-4042-80EE-11F4BE7729D1</key>
+		<string>https://github.com/straightspirits/S2AppKit-ios-samples</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>S2AppKitSamples.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3E7912E0-9618-4042-80EE-11F4BE7729D1</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/straightspirits/S2AppKit-ios-samples</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3E7912E0-9618-4042-80EE-11F4BE7729D1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3E7912E0-9618-4042-80EE-11F4BE7729D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Samples</string>
+		</dict>
+	</array>
+</dict>
+</plist>

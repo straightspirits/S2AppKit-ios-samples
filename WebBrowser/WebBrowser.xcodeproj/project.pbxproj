@@ -26,7 +26,6 @@
 		53132ACE186706EC00408534 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53132ACC186706EC00408534 /* InfoPlist.strings */; };
 		53132AD0186706EC00408534 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53132ACF186706EC00408534 /* Tests.m */; };
 		53132ADA1867071300408534 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53132AD91867071300408534 /* libz.dylib */; };
-		53C3F591196C2A9C0020892F /* WebBrowser-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53C3F58F196C2A9C0020892F /* WebBrowser-Info.plist */; };
 		53C3F592196C2A9C0020892F /* WebBrowser.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 53C3F590196C2A9C0020892F /* WebBrowser.entitlements */; };
 		53C3F594196C2ABE0020892F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C3F593196C2ABE0020892F /* Images.xcassets */; };
 		53C3F597196C2FF80020892F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C3F595196C2FF80020892F /* InfoViewController.m */; };
@@ -265,7 +264,7 @@
 		53132A81186706EB00408534 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Straight Spirits Inc.";
 				TargetAttributes = {
 					53132ABF186706EC00408534 = {
@@ -306,7 +305,6 @@
 				53132AA9186706EB00408534 /* MainUICase.storyboard in Resources */,
 				53132AB5186706EB00408534 /* DebugUICase.storyboard in Resources */,
 				53132AA5186706EB00408534 /* MainUICase.plist in Resources */,
-				53C3F591196C2A9C0020892F /* WebBrowser-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +415,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = ..;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -431,7 +428,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = ..;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -446,7 +442,6 @@
 			baseConfigurationReference = E4236EB5EF2443A798739A09 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -495,7 +490,6 @@
 			baseConfigurationReference = E4236EB5EF2443A798739A09 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -537,7 +531,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebBrowser.app/WebBrowser";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -583,7 +576,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebBrowser.app/WebBrowser";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

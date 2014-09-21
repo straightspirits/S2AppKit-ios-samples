@@ -45,7 +45,7 @@
 	
 	// ViewControllerを表示する
 	// MEMO: モーダル表示をしている。
-	vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+//	vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
 	[base presentViewController:vc animated:YES completion:nil];
 
 	// closeブロックを設定する

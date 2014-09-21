@@ -13,6 +13,10 @@
 // プライベートインターフェースの定義
 @interface InfoViewController () <UIWebViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewWidth;
+
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *webViewHeight;	// MEMO: WebViewの高さを変更したい場合、このconstantプロパティに値を設定すればいい
 
@@ -22,6 +26,11 @@
 @implementation InfoViewController
 
 S2_DEALLOC_LOGGING_IMPLEMENT
+
+- (BOOL)shouldAutorotate;
+{
+	return YES;
+}
 
 #pragma mark - View Lifecycle
 
@@ -38,6 +47,22 @@ S2_DEALLOC_LOGGING_IMPLEMENT
 	// WebView: コンテンツをロードする
 	NSURLRequest* request = [NSURLRequest requestWithURL:S2URL(@"https://www.google.co.jp/search?q=%E4%BD%BF%E3%81%84%E6%96%B9&oq=%E4%BD%BF%E3%81%84%E6%96%B9&ie=UTF-8")];
 	[_webView loadRequest:request];
+}
+
+- (void)viewWillLayoutSubviews;
+{
+	S2LogPass(@"%f", self.view.width);
+	[super viewWillLayoutSubviews];
+
+	_contentViewWidth.constant = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation) ? self.view.width : self.view.height;
+}
+
+- (void)viewDidLayoutSubviews;
+{
+	[super viewDidLayoutSubviews];
+
+	[_scrollView layoutIfNeeded];
+	_scrollView.contentSize = _contentView.size;
 }
 
 #pragma mark - Actions
@@ -66,6 +91,9 @@ S2_DEALLOC_LOGGING_IMPLEMENT
 	S2LogPass(@"");
 	
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
+	int ar = _webView.scrollView.contentSize.height;
+//	_webViewHeight.constant = _webView.scrollView.contentSize.height;
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
